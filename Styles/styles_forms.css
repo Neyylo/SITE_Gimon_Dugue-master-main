@@ -1,0 +1,33 @@
+
+input[type=text] {
+    width: min-content; /* La largeur est automatiquement ajustée à la taille du contenu */
+    box-sizing: border-box; /* La largeur inclut la bordure et le padding */
+    border: 2px solid #ccc; /* Bordure de 2px solide de couleur grise */
+    border-radius: 5px; /* Bordure arrondie avec un rayon de 5px */
+    font-size: 16px; /* Taille de police de 16px */
+    background-position: 10px 10px; /* Position du fond */
+    background-repeat: no-repeat; /* Ne pas répéter l'image de fond */
+    padding: 8px 5px 8px 8px; /* Espacement intérieur */
+    transition: width 0.4s ease-in-out; /* Transition fluide de la largeur */
+}
+
+input[type=text]:focus {
+    width: 200px; /* Augmente la largeur à 200px lorsqu'il a le focus */
+}
+
+.Animal-name + .img {
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Organisation en colonnes */
+    gap: 10px; /* Espacement entre les enfants */
+    font-weight: bold; /* Poids de police en gras */
+}
+
+p {
+    font-weight: bold; /* Poids de police en gras */
+}
+
+.submit {
+    display: flex; /* Utilisation de flexbox */
+    width: fit-content; /* Ajuste la largeur au contenu */
+    font-weight: 300; /* Poids de police léger */
+}

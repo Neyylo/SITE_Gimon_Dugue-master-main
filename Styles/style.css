@@ -1,0 +1,101 @@
+/*Nolan Dugué*/
+
+
+/*ici on a le style general de notre site*/
+
+/* Styles pour l'élément HTML */
+html{
+    background-color: whitesmoke; /* Couleur de fond */
+    font-family: "Times New Roman", Times, serif; /* Police de caractères */
+}
+
+
+h1{
+    text-align: center; /* Centrage du texte */
+}
+
+
+li a{
+    color: blue; /* Couleur du texte */
+}
+
+
+div > h3 {
+    color: red; /* Couleur du texte */
+}
+
+
+p::first-letter
+{
+    font-style: italic; /* Style de police en italique */
+    font-size: larger; /* Taille de police plus grande */
+}
+
+
+.organisation{
+    text-align: center; /* Centrage du texte */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Organisation en colonnes */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    width: 100vw; /* Largeur équivalente à 100% de la largeur de la fenêtre */
+}
+
+
+.w-65{
+    width: 65%; /* Largeur équivalente à 65% de la largeur du conteneur parent */
+}
+
+
+table {
+    border-collapse: collapse; /* Fusion des bordures */
+    border: 2px solid rgb(140 140 140); /* Bordure */
+    font-family: sans-serif; /* Police de caractères */
+    font-size: 0.8rem; /* Taille de police */
+    letter-spacing: 1px; /* Espacement des caractères */
+}
+
+
+thead{
+    background-color: rgb(228 240 245); /* Couleur de fond */
+}
+
+
+th,
+td {
+    border: 1px solid rgb(160 160 160); /* Bordure */
+    padding: 8px 10px; /* Espacement intérieur */
+}
+
+td:last-of-type {
+    text-align: center; /* Centrage du texte */
+}
+
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242); /* Couleur de fond */
+}
+
+ul {
+    line-height: 1.5em; /* Hauteur de ligne */
+    margin: 5px 0 15px; /* Marge extérieure */
+    padding: 0; /* Remplissage */
+}
+
+li {
+    list-style: none; /* Pas de style de liste */
+    position: relative; /* Position relative pour le pseudo-élément */
+    padding: 0 0 0 20px; /* Espacement intérieur */
+}
+
+li::before {
+    content: ""; /* Contenu vide */
+    position: absolute; /* Position absolue par rapport à l'élément parent */
+    left: 0; /* Position à gauche */
+    top: 6px; /* Position en haut */
+    height: 5px; /* Hauteur */
+    width: 5px; /* Largeur */
+    border: 1px solid #f9dd94; /* Bordure */
+    border-width: 2px 2px 0 0; /* Largeur de la bordure */
+    transform: rotate(45deg); /* Rotation */
+}

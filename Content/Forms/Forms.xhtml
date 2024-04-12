@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Animals </title>
+  <link rel="stylesheet" href="../../Styles/style.css"/>
+  <link rel="stylesheet" href="../../Styles/Top_bar.css"/>
+  <link rel="alternate stylesheet" href="../../Styles/style_alt.css"/>
+  <link rel="stylesheet" href="../../Styles/styles_forms.css"/>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="../../index.xhtml">Home</a>
+    <a href="../Collection/Ours_Polaire.xhtml">Ours Polaire</a>
+    <a href="../Collection/Harfang_des_neiges.xhtml">Harfang des neiges</a>
+    <a href="../Collection/Requin_renard.xhtml">Requin-renard</a>
+    <a href="../Collection/Pangolin_indien.xhtml">Pangolin indien</a>
+    <a href="../Miscellaneous/synoptic.xhtml">Tableau</a>
+    <a class="active" href="./Forms.xhtml">Formulaire</a>
+    <a href="./Forms2.xhtml">Formulaire 2</a>
+    <a class="Contact" href="mailto:nolan.dugue@gmail.com">Contact</a>
+  </div> 
+
+    <h2>Formulaire :</h2>
+
+    <p>Ici vous pouvez nous proposer des animaux a rajouter sur notre site !</p>
+
+    <form action="http://voca2.univ-poitiers.fr/~subrenat/cours_web/traitement.php" method="get">
+      <div class="Animal-name">
+        <label for="Animal-name">Nom de l'animal :</label>
+        <input name="Animal-name" id="Animal-name" type="text"/>
+      </div>
+      <div class="img">
+        <label for="map-img">Image de sa localisation :</label>
+        <input type="file" name="map-img" id="map-img"/>
+      </div>
+        
+        
+      <p>Rang de vulnérabilité : </p>
+      <input type="radio" id="LC" name="Vulnerability"/>
+      <label for="LC">LC</label>
+      <input type="radio" id="NT" name="Vulnerability"/>
+      <label for="NT">NT</label>
+      <input type="radio" id="VU" name="Vulnerability"/>
+      <label for="VU">VU</label>
+      <input type="radio" id="EN" name="Vulnerability"/>
+      <label for="EN">EN</label>
+      <input type="radio" id="CR" name="Vulnerability"/>
+      <label for="CR">CR</label>
+      <input type="radio" id="EW" name="Vulnerability"/>
+      <label for="EW">EW</label>
+      <input type="radio" id="EX" name="Vulnerability"/>
+      <label for="EX">EX</label>
+
+      <input class="submit" type="submit" value="Submit"/>
+  
+    </form>
+
+</body>
+</html>

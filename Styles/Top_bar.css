@@ -1,0 +1,26 @@
+
+.topnav {
+    background-color: #393E46; /* Couleur de fond */
+    overflow: hidden; /* Masque le contenu qui dépasse */
+    margin: -12px; /* Marge extérieure négative pour compenser une éventuelle marge ajoutée par défaut */
+}
+  
+.topnav a {
+    float: left; /* Place les éléments en ligne */
+    color: #f2f2f2; /* Couleur du texte */
+    text-align: center; /* Centrage du texte */
+    padding: 17px 16px; /* Espacement intérieur */
+    text-decoration: none; /* Pas de soulignement de lien */
+    font-size: 17px; /* Taille de police */
+    transition: ease-in-out all 300ms; /* Transition fluide de tous les styles sur une durée de 300ms */
+}
+
+.topnav a:hover {
+    background-color: #ddd; /* Couleur de fond au survol */
+    color: black; /* Couleur du texte au survol */
+}
+
+.topnav a.active {
+    background-color: #6C0277; /* Couleur de fond pour le lien actif */
+    color: white; /* Couleur du texte pour le lien actif */
+}

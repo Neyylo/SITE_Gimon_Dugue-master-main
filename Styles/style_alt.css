@@ -1,0 +1,28 @@
+
+html{
+    background-color: #393E46; /* Couleur de fond */
+    font-family: "Inter"; /* Police de caractères */
+    color: white; /* Couleur du texte */
+}
+
+
+h1{
+    text-align: center; /* Centrage du texte */
+}
+
+li a{
+    color: blue; /* Couleur du texte */
+}
+
+.organisation{
+    text-align: center; /* Centrage du texte */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Organisation en colonnes */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    width: 100vw; /* Largeur équivalente à 100% de la largeur de la fenêtre */
+}
+
+.w-65{
+    width: 65%; /* Largeur équivalente à 65% de la largeur du conteneur parent */
+}
