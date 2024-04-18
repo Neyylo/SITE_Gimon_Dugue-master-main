@@ -9,7 +9,6 @@ html{
     font-family: "Times New Roman", Times, serif; /* Police de caractères */
 }
 
-
 h1{
     text-align: center; /* Centrage du texte */
 }
@@ -27,8 +26,8 @@ div > h3 {
 
 p::first-letter
 {
-    font-style: italic; /* Style de police en italique */
-    font-size: larger; /* Taille de police plus grande */
+    font-style: normal; /* Style de police en italique */
+    font-size:large; /* Taille de police plus grande */
 }
 
 
@@ -98,4 +97,13 @@ li::before {
     border: 1px solid #f9dd94; /* Bordure */
     border-width: 2px 2px 0 0; /* Largeur de la bordure */
     transform: rotate(45deg); /* Rotation */
+}
+
+#time{
+    font-style: normal;
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 0;
 }

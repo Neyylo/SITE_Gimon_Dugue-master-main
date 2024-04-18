@@ -26,3 +26,12 @@ li a{
 .w-65{
     width: 65%; /* Largeur équivalente à 65% de la largeur du conteneur parent */
 }
+
+#time{
+    font-style: normal;
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
