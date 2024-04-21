@@ -30,3 +30,18 @@ function changerStyle() {
   
   }  
 };
+
+function randomFiche() {
+  const OursPolaire = '../Content/Collection/Ours_Polaire.xhtml'
+  const HarfangDesNeiges = '../Content/Collection/Harfang_des_neiges.xhtml'
+  const Pangolin = '../Content/Collection/Pangolin_indien.xhtml'
+  const RequinRenard = '../Content/Collection/Requin_renard.xhtml'
+  var ficheArray = [OursPolaire, HarfangDesNeiges, Pangolin, RequinRenard]
+  return ficheArray[Math.floor(Math.random() * ficheArray.length)];
+};
+
+
+function redirectToRandom() {
+  let randomFicheUrl = randomFiche();
+  window.location.href = randomFicheUrl;
+};
