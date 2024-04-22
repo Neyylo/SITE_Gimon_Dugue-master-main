@@ -46,9 +46,9 @@ function redirectToRandom() {
   window.location.href = randomFicheUrl;
 };
   
+var images = ["./Images/Image_Accueil/Image_acceuill.jpeg", "./Images/Image_Accueil/LR-oiseaux-nicheurs-PC.jpg"];
+var currentIndex = 0;
 function changeImage() {
-  var images = ["./Images/Image_Accueil/Image_acceuill.jpeg", "./Images/Image_Accueil/LR-oiseaux-nicheurs-PC.jpg"];
-  var currentIndex = 0;
   var img = document.getElementById("imageToShow");
 
   if (currentIndex === 0) {
