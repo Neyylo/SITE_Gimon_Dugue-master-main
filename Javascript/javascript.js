@@ -32,11 +32,11 @@ function changerStyle() {
 };
 
 function randomFiche() {
-  const OursPolaire = '../Content/Collection/Ours_Polaire.xhtml'
-  const HarfangDesNeiges = '../Content/Collection/Harfang_des_neiges.xhtml'
-  const Pangolin = '../Content/Collection/Pangolin_indien.xhtml'
-  const RequinRenard = '../Content/Collection/Requin_renard.xhtml'
-  var ficheArray = [OursPolaire, HarfangDesNeiges, Pangolin, RequinRenard]
+  const OursPolaire = '../Content/Collection/Ours_Polaire.xhtml';
+  const HarfangDesNeiges = '../Content/Collection/Harfang_des_neiges.xhtml';
+  const Pangolin = '../Content/Collection/Pangolin_indien.xhtml';
+  const RequinRenard = '../Content/Collection/Requin_renard.xhtml';
+  var ficheArray = [OursPolaire, HarfangDesNeiges, Pangolin, RequinRenard];
   return ficheArray[Math.floor(Math.random() * ficheArray.length)];
 };
 
@@ -44,4 +44,17 @@ function randomFiche() {
 function redirectToRandom() {
   let randomFicheUrl = randomFiche();
   window.location.href = randomFicheUrl;
+};
+  
+function changeImage() {
+  var images = ["./Images/Image_Accueil/Image_acceuill.jpeg", "./Images/Image_Accueil/LR-oiseaux-nicheurs-PC.jpg"];
+  var currentIndex = 0;
+  var img = document.getElementById("imageToShow");
+
+  if (currentIndex === 0) {
+    currentIndex = (currentIndex + 1) % images.length;
+  } else if (currentIndex === 1) {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+  }
+  img.src = images[currentIndex]
 };
