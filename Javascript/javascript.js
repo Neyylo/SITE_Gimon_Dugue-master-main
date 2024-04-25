@@ -58,3 +58,63 @@ function changeImage() {
   }
   img.src = images[currentIndex]
 };
+
+function validateAnimalName() {
+  var animalNameInput = document.getElementById("Animal-name");
+  var animalNameError = document.getElementById("animalNameError");
+  var animalName = animalNameInput.value.trim();
+
+  if (animalName === "") {
+    animalNameError.textContent = "Le nom de l'animal est requis";
+    animalNameInput.classList.add("error");
+  } else {
+    animalNameError.textContent = "";
+    animalNameInput.classList.remove("error");
+  }
+};
+
+function validateVulnerability() {
+  var vulnerabilityError = document.getElementById("vulnerabilityError");
+  var radios = document.querySelectorAll('input[name="Vulnerability"]');
+  var checked = false;
+
+  radios.forEach(function(radio) {
+    if (radio.checked) {
+      checked = true;
+    }
+  });
+
+  if (!checked) {
+    vulnerabilityError.textContent = "Veuillez sélectionner un rang de vulnérabilité";
+  } else {
+    vulnerabilityError.textContent = "";
+  }
+};
+
+function validateForm() {
+  validateAnimalName();
+  validateVulnerability();
+  // Ajoute d'autres fonctions de validation ici si nécessaire
+
+  // Empêche la soumission du formulaire si des erreurs sont présentes
+  var errors = document.querySelectorAll('.error');
+  if (errors.length > 0) {
+    alert("Veuillez corriger les erreurs dans le formulaire avant de le soumettre.");
+  } else {
+    document.getElementById("myForm").submit();
+  }
+};
+
+function showSummary() {
+  
+  var animalName = document.getElementById("Animal-name").value;
+  var vulnerability = document.querySelector('input[name="Vulnerability"]:checked').id;
+  var mapImg = document.getElementById("map-img").value;
+
+  var summary = "<p>Nom de l'animal : " + animalName + "</p>";
+  summary += "<p>Rang de vulnérabilité : " + vulnerability + "</p>";
+  summary += "<p>Image de sa localisation : " + mapImg + "</p>";
+
+  document.getElementById("summary").innerHTML = summary;
+};
+
