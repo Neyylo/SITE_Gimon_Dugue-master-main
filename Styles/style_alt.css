@@ -1,4 +1,6 @@
 
+/*Fais par Nolan Dugué*/
+
 html{
     background-color: #393E46; /* Couleur de fond */
     font-family: "Inter"; /* Police de caractères */
@@ -27,11 +29,11 @@ li a{
     width: 65%; /* Largeur équivalente à 65% de la largeur du conteneur parent */
 }
 
-#time{
-    font-style: normal;
-    font-size: larger;
-    font-weight: bold;
-    position: absolute;
-    top: 10%;
-    left: 0;
+#time {
+    font-style: normal; /* Police normale */
+    font-size: larger; /* Taille de la police plus grande */
+    font-weight: bold; /* Police en gras */
+    position: absolute; /* Position absolue */
+    top: 10%; /* À 10% du haut du conteneur */
+    left: 0; /* Aligné à gauche du conteneur */
 }
